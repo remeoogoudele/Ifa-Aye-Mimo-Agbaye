@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ilé Ifá Ayé Tuntun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ilé Ifá Ayé Tuntun</h1>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation">
+      <div></div><div></div><div></div>
+    </button>
+    <nav id="primary-navigation" role="navigation">
+      <a href="#accueil">Accueil</a>
+      <a href="#odu-jour">Odù du Jour</a>
+      <a href="#cours">Cours</a>
+      <a href="#fondateur">Fondateur</a>
+      <a href="#consultation">Consultation</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#espace-membre">Espace Membre</a>
+      <a href="#ebook">E-book</a>
+      <a href="#paiement">Paiement</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#blog">Blog</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="lang-switch">FR</button>
+  </header>
+
+  <main>
+    <section id="accueil" tabindex="-1">
+      <h2>Bienvenue</h2>
+      <p class="highlight">“Ifá fun gbogbo ènìyàn. Àṣẹ fun gbogbo Ayé.”</p>
+      <p>Notre école est un pont entre la sagesse ancestrale yorùbá et les générations modernes...</p>
+      <a href="#inscription" class="action-btn">Devenir élève maintenant</a>
+    </section>
+    <section id="odu-jour" tabindex="-1">
+      <h2>Odù Ifá du Jour</h2>
+      <div id="oduMessage" class="highlight">Chargement de l'Odù du jour...</div>
+    </section>
+    <section id="cours" tabindex="-1">
+      <h2>Nos Cours</h2>
+      <ul>
+        <li><strong>Niveau 1 :</strong> Introduction à Ifá</li>
+        <li><strong>Niveau 2 :</strong> Étude des Odù Mẹ́jì</li>
+        <li><strong>Niveau 3 :</strong> Rituels, Ẹbọ et divination</li>
+        <li><strong>Niveau 4 :</strong> Maîtrise et transmission</li>
+      </ul>
+      <p>PDF, audio et vidéo disponibles. Cours en yorùbá, français, anglais, espagnol.</p>
+      <a href="#inscription" class="action-btn">Inscris-toi dès maintenant</a>
+    </section>
+    <section id="fondateur" tabindex="-1">
+      <h2>Le Fondateur</h2>
+      <p>Roméo Prince OGOUDELE, initié d’Ifá, ingénieur, écrivain et enseignant spirituel...</p>
+      <p><strong>Email :</strong> <a href="mailto:ogoudeleprince@gmail.com">ogoudeleprince@gmail.com</a></p>
+    </section>
+    <section id="consultation" tabindex="-1">
+      <h2>Consultation Ifá</h2>
+      <p>Lecture d’Odù, conseils d’Ẹbọ, alignement d’Orí</p>
+      <p><strong>WhatsApp :</strong> <a href="https://wa.me/2348146233396" target="_blank">+2348146233396</a></p>
+      <p><strong>Email :</strong> <a href="mailto:ogoudeleprince@gmail.com">ogoudeleprince@gmail.com</a></p>
+      <a href="#paiement" class="action-btn">Payer la consultation</a>
+    </section>
+    <section id="inscription" tabindex="-1">
+      <h2>Rejoindre l’école</h2>
+      <form id="inscriptionForm" novalidate>
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" name="nom" required />
+        <div class="error" id="nomError"></div>
+        <label for="prenom">Prénom *</label>
+        <input type="text" id="prenom" name="prenom" required />
+        <div class="error" id="prenomError"></div>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+        <div class="error" id="emailError"></div>
+        <label for="telephone">Téléphone *</label>
+        <input type="tel" id="telephone" name="telephone" required placeholder="+229xxxxxxxx" />
+        <div class="error" id="telephoneError"></div>
+        <button type="submit" class="submit-btn">S’inscrire</button>
+      </form>
+      <div id="inscriptionSuccess" class="success-msg" style="display:none;">Inscription réussie !</div>
+      <p><a href="#" id="ficheInscription">📄 Télécharger la fiche</a></p>
+      <p><a href="https://t.me/+kkUyyLOAXbplOGVk" target="_blank">💬 Groupe Telegram</a></p>
+    </section>
+    <section id="espace-membre" tabindex="-1">
+      <h2>Espace Membre</h2>
+      <form id="authForm">
+        <input type="email" id="authEmail" placeholder="Email" required />
+        <input type="password" id="authPassword" placeholder="Mot de passe" required />
+        <button type="submit" class="auth-btn">Connexion</button>
+      </form>
+      <div id="authMessage" class="success-msg" style="display:none;"></div>
+    </section>
+    <section id="ebook" tabindex="-1">
+      <h2>E-book Ifá</h2>
+      <p><a href="https://example.com/ebook-ifa.pdf" download>📖 Télécharger ici</a></p>
+    </section>
+    <section id="paiement" tabindex="-1">
+      <h2>Paiement</h2>
+      <a href="https://flutterwave.com/pay/ifa-ayetuntun" class="payment-btn" target="_blank">🔐 Flutterwave</a>
+      <a href="https://wa.me/22956723086" class="whatsapp-btn" target="_blank">💬 WhatsApp</a>
+    </section>
+    <section id="temoignages" tabindex="-1">
+      <h2>Témoignages</h2>
+      <div class="testimony">« Grâce à Ilé Ifá... » – Amina D.</div>
+      <div class="testimony">« Les enseignements de Roméo... » – Koffi T.</div>
+      <div class="testimony">« Une école qui allie tradition... » – Fatou S.</div>
+    </section>
+    <section id="blog" tabindex="-1">
+      <h2>Blog – Enseignements d’Orunmila</h2>
+      <article class="blog-article">
+        <h3>Introduction à Ifá</h3>
+        <p>Ifá est une sagesse millénaire...</p>
+        <a href="#">Lire la suite</a>
+      </article>
+    </section>
+    <section id="faq" tabindex="-1">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <div class="faq-question">Comment rejoindre l’école ?</div>
+        <div class="faq-answer">Remplis le formulaire d’inscription plus haut.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Puis-je payer depuis l’étranger ?</div>
+        <div class="faq-answer">Oui, via Flutterwave ou WhatsApp.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Ilé Ifá Ayé Tuntun. Tous droits réservés.
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      const nav = document.getElementById('primary-navigation');
+      nav.classList.toggle('show');
+      this.setAttribute('aria-expanded', nav.classList.contains('show'));
+    });
+
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+      });
+    });
+
+    document.getElementById('inscriptionForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('inscriptionSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
